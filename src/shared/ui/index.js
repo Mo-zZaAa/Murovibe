@@ -7,3 +7,4 @@ export { default as MarkdownRenderer } from './MarkdownRenderer';
 export { default as HamsterTMI } from './HamsterTMI';
 export { default as HamsterProfile } from './HamsterProfile';
 export { default as HamsterRidingAnimation } from './HamsterRidingAnimation';
+export { default as ThreeJSAnimation } from './ThreeJSAnimation';

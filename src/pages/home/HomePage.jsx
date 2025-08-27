@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Card, Button, LoadingSpinner, HamsterTMI, HamsterProfile, HamsterRidingAnimation } from '@ui/';
+import { Card, Button, LoadingSpinner, HamsterTMI, HamsterProfile, HamsterRidingAnimation, ThreeJSAnimation } from '@ui/';
 import { useGeminiAI } from '@features/ai-answer';
 import { useQuestionInput } from '@features/question-input';
 import QuestionForm from './QuestionForm';
@@ -108,6 +108,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      <ThreeJSAnimation />
       <HamsterRidingAnimation 
         isVisible={aiLoading} 
         onComplete={() => {

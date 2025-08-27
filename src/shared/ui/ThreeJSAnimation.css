@@ -1,0 +1,23 @@
+.threejs-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.threejs-animation canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 반응형 설정 */
+@media (max-width: 768px) {
+  .threejs-animation {
+    z-index: 0;
+  }
+}
