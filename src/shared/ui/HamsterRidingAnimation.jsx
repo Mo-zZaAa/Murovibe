@@ -27,7 +27,7 @@ const HamsterRidingAnimation = ({ isVisible = false, onComplete }) => {
       <div className="hamster-riding-animation__container">
         <div className="hamster-riding-animation__hamster">
           <img 
-            src="/src/assets/ChatGPT Image 2025년 8월 27일 오후 12_37_16.png" 
+            src="/hamster-riding.png" 
             alt="햄대리 따릉이 타고 달려가기" 
             className="hamster-riding-animation__image"
           />

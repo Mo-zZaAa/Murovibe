@@ -6,7 +6,7 @@ const HamsterProfile = ({ isAnswering = false }) => {
     <div className={`hamster-profile ${isAnswering ? 'hamster-profile--answering' : ''}`}>
       <div className="hamster-profile__avatar">
         <img 
-          src="/src/assets/햄이직장인 ver.jpg" 
+          src="/hamster-profile.jpg" 
           alt="햄대리 프로필" 
           className="hamster-profile__image"
         />
