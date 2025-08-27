@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,14 +20,14 @@
 
 .hamster-riding-animation__container {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   margin-bottom: 30px;
 }
 
 .hamster-riding-animation__hamster {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -40,12 +40,13 @@
 }
 
 .hamster-riding-animation__image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
   object-fit: cover;
-  border: 2px solid #ff6b6b;
-  box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+  border: 3px solid #ff6b6b;
+  box-shadow: 0 0 30px rgba(255, 107, 107, 0.7);
+  background: #fff;
 }
 
 .hamster-riding-animation__bike {
@@ -129,10 +130,11 @@
 .hamster-riding-animation__text {
   text-align: center;
   color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   animation: textPulse 1s ease-in-out infinite alternate;
+  margin-top: 20px;
 }
 
 @keyframes textPulse {
@@ -148,8 +150,8 @@
   }
   
   .hamster-riding-animation__image {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
   }
   
   .hamster-riding-animation__text {
