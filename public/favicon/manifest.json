@@ -1,8 +1,9 @@
 {
  "name": "햄대리 - 물어봐이브",
  "short_name": "햄대리",
- "description": "헴님만을 바라보는 충성스러운 햄스터에게 뭐든 물어보세요!",
- "start_url": "/",
+ "description": "헴님만을 바라보는 충성스러운 AI 햄스터에게 뭐든 물어보세요!",
+ "start_url": "https://myham.netlify.app/",
+ "scope": "https://myham.netlify.app/",
  "display": "standalone",
  "theme_color": "#0a0a0a",
  "background_color": "#0a0a0a",

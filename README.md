@@ -14,7 +14,16 @@
 - **`public/404.html`**: 정적 404 페이지
 - **`src/pages/NotFound.jsx`**: React 404 컴포넌트
 
-### 2. 배포 방법
+### 2. SEO 최적화
+구글 검색 노출을 위한 완벽한 SEO 설정:
+
+- **`public/robots.txt`**: 검색엔진 크롤러 가이드
+- **`public/sitemap.xml`**: 사이트 구조 정보
+- **`public/hamster-og.png`**: 소셜미디어 공유 이미지 (1200x630)
+- **메타태그**: Open Graph, Twitter Card, 구조화된 데이터
+- **도메인**: https://myham.netlify.app/
+
+### 3. 배포 방법
 1. GitHub에 코드 푸시
 2. Netlify에서 "New site from Git" 선택
 3. 저장소 연결
@@ -23,7 +32,7 @@
    - Publish directory: `dist`
    - Node.js version: `20`
 
-### 3. 환경변수 설정 (Netlify)
+### 4. 환경변수 설정 (Netlify)
 Netlify 대시보드에서 다음 환경변수를 설정하세요:
 - `VITE_GEMINI_API_KEY`: Gemini API 키
 - `VITE_GEMINI_API_URL`: Gemini API URL
@@ -36,15 +45,15 @@ npm install
 ```
 
 ### 2. 환경변수 설정
-프로젝트 루트에 `.env.local` 파일을 생성하고 다음 내용을 추가하세요:
+프로젝트 루트에 `..local` 파일을 생성하고 다음 내용을 추가하세요:
 
-```env
+```
 # Gemini API Configuration
 VITE_GEMINI_API_KEY=your_gemini_api_key_here
 VITE_GEMINI_API_URL=https://generativelanguage.googleapis.com
 
-# Environment
-NODE_ENV=development
+# ironment
+NODE_=development
 ```
 
 **Gemini API 키 발급 방법:**
@@ -117,6 +126,6 @@ src/
 
 ## 🚨 주의사항
 
-- `.env.local` 파일은 `.gitignore`에 추가되어 있어 Git에 커밋되지 않습니다
+- `..local` 파일은 `.gitignore`에 추가되어 있어 Git에 커밋되지 않습니다
 - Gemini API 키는 절대 공개 저장소에 노출하지 마세요
 - API 사용량과 비용을 모니터링하세요
