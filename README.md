@@ -4,6 +4,32 @@
 
 ## 🚀 프로젝트 시작하기
 
+## 🌐 Netlify 배포
+
+### 1. 자동 배포 설정
+이 프로젝트는 Netlify 배포를 위한 완벽한 설정이 포함되어 있습니다:
+
+- **`netlify.toml`**: 빌드 설정, 리다이렉트, 헤더 설정
+- **`public/_redirects`**: SPA 라우팅을 위한 fallback
+- **`public/404.html`**: 정적 404 페이지
+- **`src/pages/NotFound.jsx`**: React 404 컴포넌트
+
+### 2. 배포 방법
+1. GitHub에 코드 푸시
+2. Netlify에서 "New site from Git" 선택
+3. 저장소 연결
+4. 빌드 설정은 `netlify.toml`에서 자동으로 인식됨:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node.js version: `20`
+
+### 3. 환경변수 설정 (Netlify)
+Netlify 대시보드에서 다음 환경변수를 설정하세요:
+- `VITE_GEMINI_API_KEY`: Gemini API 키
+- `VITE_GEMINI_API_URL`: Gemini API URL
+
+## 🚀 프로젝트 시작하기
+
 ### 1. 의존성 설치
 ```bash
 npm install
