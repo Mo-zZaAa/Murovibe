@@ -1,0 +1,179 @@
+.markdown-renderer {
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+/* 제목 스타일 */
+.markdown-h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 24px 0 16px 0;
+  color: #ffffff;
+  border-bottom: 3px solid #666;
+  padding-bottom: 8px;
+}
+
+.markdown-h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 0 12px 0;
+  color: #ffffff;
+  border-left: 4px solid #ff6b6b;
+  padding-left: 12px;
+}
+
+.markdown-h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 16px 0 8px 0;
+  color: #ffffff;
+}
+
+.markdown-h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 12px 0 6px 0;
+  color: #ffffff;
+}
+
+/* 단락 스타일 */
+.markdown-p {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+/* 목록 스타일 */
+.markdown-ul {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.markdown-ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.markdown-li {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.markdown-li::marker {
+  color: #667eea;
+}
+
+/* 강조 스타일 */
+.markdown-strong {
+  font-weight: 700;
+  color: #ff6b6b;
+  text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.markdown-em {
+  font-style: italic;
+  color: #4ecdc4;
+}
+
+.markdown-del {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* 인용 스타일 */
+.markdown-blockquote {
+  margin: 16px 0;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2e2e2e 100%);
+  border-left: 4px solid #ff6b6b;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #ffffff;
+  position: relative;
+}
+
+.markdown-blockquote::before {
+  content: '"';
+  font-size: 3rem;
+  color: #ff6b6b;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  opacity: 0.3;
+}
+
+/* 코드 스타일 */
+.markdown-code-inline {
+  background: #2e2e2e;
+  color: #4ecdc4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid #444;
+}
+
+.markdown-pre {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 16px 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-code-block {
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* 링크 스타일 */
+.markdown-link {
+  color: #4ecdc4;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.markdown-link:hover {
+  color: #45b7d1;
+  border-bottom-color: #45b7d1;
+  text-decoration: none;
+}
+
+/* 구분선 스타일 */
+.markdown-hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff6b6b, transparent);
+  margin: 24px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .markdown-h1 {
+    font-size: 1.5rem;
+  }
+  
+  .markdown-h2 {
+    font-size: 1.3rem;
+  }
+  
+  .markdown-h3 {
+    font-size: 1.1rem;
+  }
+  
+  .markdown-pre {
+    padding: 16px;
+    font-size: 0.8rem;
+  }
+  
+  .markdown-blockquote {
+    padding: 12px 16px;
+  }
+}

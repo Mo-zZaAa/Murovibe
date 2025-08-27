@@ -1,0 +1,142 @@
+.hamster-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hamster-profile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: #666;
+}
+
+.hamster-profile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  opacity: 0.8;
+}
+
+.hamster-profile--answering {
+  border-color: #666;
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.2);
+}
+
+.hamster-profile__avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hamster-profile__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #444;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hamster-profile__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.hamster-profile--answering .hamster-profile__image {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.3);
+}
+
+.hamster-profile__status {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  border: 3px solid #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamster-profile__pulse {
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hamster-profile__info {
+  flex: 1;
+}
+
+.hamster-profile__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hamster-profile__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #ff6b6b;
+}
+
+.hamster-profile__subtitle {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #b0b0b0;
+  line-height: 1.4;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .hamster-profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .hamster-profile__image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .hamster-profile__name {
+    font-size: 1.3rem;
+  }
+}

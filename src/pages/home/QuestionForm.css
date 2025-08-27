@@ -1,0 +1,74 @@
+.question-form {
+  background: #1e1e1e;
+  border: 1px solid #444;
+}
+
+.question-form__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.question-form__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #e0e0e0;
+}
+
+.question-form__description {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.question-form__input-section {
+  margin-bottom: 24px;
+}
+
+.question-form__textarea {
+  margin-bottom: 8px;
+}
+
+.question-form__textarea--error {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.question-form__error {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.error-text {
+  color: #ff6b6b;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.question-form__hint {
+  text-align: center;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+.question-form__actions {
+  text-align: center;
+}
+
+.question-form__submit-btn {
+  min-width: 200px;
+  font-size: 1.1rem;
+  padding: 16px 32px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .question-form__title {
+    font-size: 1.5rem;
+  }
+  
+  .question-form__submit-btn {
+    min-width: 100%;
+  }
+}

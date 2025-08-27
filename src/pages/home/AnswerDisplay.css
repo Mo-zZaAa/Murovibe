@@ -1,0 +1,102 @@
+.answer-display {
+  background: #1e1e1e;
+  border: 1px solid #444;
+}
+
+.answer-display__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.answer-display__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.answer-display__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.answer-display__copy-btn,
+.answer-display__new-btn {
+  white-space: nowrap;
+}
+
+.answer-display__content {
+  margin-bottom: 20px;
+}
+
+.answer-display__markdown {
+  padding: 20px;
+  background: #2e2e2e;
+  border-radius: 12px;
+  border-left: 4px solid #ff6b6b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.answer-display__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #2e2e2e;
+  border-radius: 12px;
+  border-left: 4px solid #ff6b6b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.answer-display__loading p {
+  margin-top: 16px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.answer-display__footer {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #444;
+}
+
+.answer-display__note {
+  color: #b0b0b0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.answer-display__additional-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .answer-display__header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .answer-display__actions {
+    justify-content: center;
+  }
+  
+  .answer-display__title {
+    font-size: 1.2rem;
+  }
+  
+  .answer-display__markdown {
+    padding: 16px;
+  }
+}

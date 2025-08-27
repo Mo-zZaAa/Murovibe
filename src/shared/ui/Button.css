@@ -1,0 +1,71 @@
+.ui-button {
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ui-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.ui-button--primary {
+  background: #444;
+  color: #ffffff;
+  border: 1px solid #666;
+}
+
+.ui-button--primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #555;
+  border-color: #777;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.ui-button--secondary {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.ui-button--secondary:hover:not(:disabled) {
+  background: #444;
+  border-color: #666;
+}
+
+.ui-button--success {
+  background: #2d5a2d;
+  color: #ffffff;
+  border: 1px solid #3d6a3d;
+}
+
+.ui-button--success:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #3d6a3d;
+  border-color: #4d7a4d;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Sizes */
+.ui-button--small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.ui-button--medium {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.ui-button--large {
+  padding: 16px 32px;
+  font-size: 18px;
+}

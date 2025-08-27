@@ -1,0 +1,41 @@
+.hamster-tmi {
+  position: relative;
+  background: #2a2a2a;
+  border: 1px solid #ff6b6b;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hamster-tmi__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hamster-tmi__icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.hamster-tmi__text {
+  font-size: 0.875rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .hamster-tmi {
+    margin: 12px 0;
+  }
+  
+  .hamster-tmi__text {
+    font-size: 0.8rem;
+  }
+}

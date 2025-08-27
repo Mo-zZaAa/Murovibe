@@ -1,0 +1,47 @@
+.ui-card {
+  background: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  border: 1px solid #444;
+}
+
+.ui-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border-color: #666;
+}
+
+/* Variants */
+.ui-card--default {
+  border: 1px solid #444;
+}
+
+.ui-card--elevated {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #555;
+  background: #222;
+}
+
+.ui-card--outlined {
+  border: 2px solid #444;
+  box-shadow: none;
+}
+
+.ui-card--outlined:hover {
+  border-color: #777;
+  transform: none;
+}
+
+/* Padding sizes */
+.ui-card--small {
+  padding: 16px;
+}
+
+.ui-card--medium {
+  padding: 24px;
+}
+
+.ui-card--large {
+  padding: 32px;
+}

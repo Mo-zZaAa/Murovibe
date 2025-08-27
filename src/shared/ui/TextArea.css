@@ -1,0 +1,45 @@
+.ui-textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ui-textarea {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #555;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+  transition: all 0.2s ease;
+  background: #2e2e2e;
+  color: #ffffff;
+}
+
+.ui-textarea:focus {
+  outline: none;
+  border-color: #777;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+.ui-textarea:disabled {
+  background: #1e1e1e;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.ui-textarea::placeholder {
+  color: #999;
+}
+
+.ui-textarea-counter {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 12px;
+  color: #999;
+  background: rgba(46, 46, 46, 0.9);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
